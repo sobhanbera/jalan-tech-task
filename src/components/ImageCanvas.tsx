@@ -182,6 +182,10 @@ const ImageCanvas: React.FC<ImageCanvasProps> = ({}) => {
 
     return (
         <div className="main-container">
+            <div>
+                <h2>Roof Drawing</h2>
+            </div>
+
             <div className="canvas-container">
                 <canvas
                     ref={canvasRef}
