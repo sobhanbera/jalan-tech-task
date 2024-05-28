@@ -1,5 +1,7 @@
 A simple React app that draws over image using canvas.
 
+## The deployed app could be accessed [here](https://jalan-tech-task-sobhanbera.vercel.app)
+
 ## Features
 
 -   Upload an image (to use custom images)
@@ -8,7 +10,10 @@ A simple React app that draws over image using canvas.
 -   Export the final drawing as an image
 -   Clear the canvas
 
-## The deployed app could be accessed [here](https://jalan-tech-task-sobhanbera.vercel.app)
+
+https://github.com/sobhanbera/jalan-tech-task/assets/50291544/30418fa6-4930-4d61-9775-33d461a9a32f
+
+<img width="1470" alt="Screenshot 2024-05-28 at 12 44 46" src="https://github.com/sobhanbera/jalan-tech-task/assets/50291544/bf73e97f-e4bf-45e7-a009-42cc782000ee">
 
 ## Available Scripts
 
