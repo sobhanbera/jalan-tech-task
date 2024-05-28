@@ -10,10 +10,8 @@ interface Drawing {
     color: string;
 }
 
-interface ImageCanvasProps {
-    exportImage: () => void;
-}
-const ImageCanvas: React.FC<ImageCanvasProps> = ({ exportImage }) => {
+interface ImageCanvasProps {}
+const ImageCanvas: React.FC<ImageCanvasProps> = ({}) => {
     const canvasRef = useRef<HTMLCanvasElement>(null); // the reference to the main canvas
     const fileInputRef = useRef<HTMLInputElement>(null); // image file
 
@@ -63,6 +61,21 @@ const ImageCanvas: React.FC<ImageCanvasProps> = ({ exportImage }) => {
         };
         loadImage();
     }, []);
+
+    /**
+     * method to export the image drawn on the canvas
+     * it creates a link and clicks it to download the image
+     * as a PNG file
+     */
+    const exportImage = () => {
+        if (canvasRef.current) {
+            const image = canvasRef.current.toDataURL("image/png");
+            const link = document.createElement("a");
+            link.href = image;
+            link.download = "roof.png";
+            link.click();
+        }
+    };
 
     /**
      * this method draws lines connecting the points on the canvas.
